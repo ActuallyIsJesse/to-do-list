@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #6200EE;
+    --primary-variant: #3700B3;
+    --secondary-color: #03DAC6;
+    --secondary-variant: #018786;
+    --background-color: #FFFFFF;
+    --surface-color: #FFFFFF;
+    --error-color: #B00020;
+    --on-primary-color: #FFFFFF;
+    --on-primary-hover: #F9F9F9;
+    --on-primary-active: #C9C9C9;
+    --on-secondary-color: #000000;
+    --on-background-color: #000000;
+    --on-surface-color: #000000;
+    --on-error-color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.top-nav {
+    padding: .25rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+ .logo {
+    color: var(--on-primary-color);
+    font-family: sans-serif;
+    font-weight: bold;
+ }
+
+ .add-new {
+    background-color: var(--on-primary-color);
+    color: var(--secondary-color);
+    font-size: 2rem;
+    border-style: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+ }
+
+ .add-new:hover {
+    scale: 1.1;
+    background-color: var(--on-primary-hover);
+ }
+
+ .add-new:active {
+    background-color: var(--on-primary-active);
+ }
