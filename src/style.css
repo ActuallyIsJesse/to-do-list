@@ -90,7 +90,7 @@ a:visited {
 }
 
 .sidebar {
-    background-color:var(--on-primary-active);
+    background-color:var(--on-primary-hover);
 
 }
 
