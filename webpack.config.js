@@ -8,10 +8,17 @@ module.exports = {
     
   //This property defines the file path and the file name which will be used for deploying the bundled file
   output:{
-    path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
-    
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
   //Setup loaders
   module: {
     rules: [
@@ -25,7 +32,6 @@ module.exports = {
       }
     ]
   },
-    
   // Setup plugin to use a HTML file for serving bundled js files
   plugins: [
     new HtmlWebpackPlugin({
